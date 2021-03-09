@@ -1,6 +1,6 @@
 package kr.ac.kopo.day02;
 
-public class variables_test {
+public class VariableTest {
 
 	static int global_variable = 5;
 	
@@ -8,7 +8,7 @@ public class variables_test {
 	
 	public String member_variable;
 
-	public variables_test (String empName) {
+	public VariableTest (String empName) {
 		member_variable = empName;
 	}
 	
@@ -18,7 +18,7 @@ public class variables_test {
 
 		System.out.println("------------------------------------");
 		System.out.println(global_variable);
-		variables_test testing2 = new variables_test("testing2");
+		VariableTest testing2 = new VariableTest("testing2");
 		System.out.println(testing2.member_variable);
 		System.out.println(testing2.global_variable);
 		

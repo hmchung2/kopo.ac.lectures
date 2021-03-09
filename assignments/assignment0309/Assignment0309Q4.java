@@ -1,4 +1,4 @@
-package lectures.assignment0308;
+package assignment0309;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ import java.util.Scanner;
 * 두번째 정수 입력 : 5
 * 
 */
-public class Assignment0308Q4 {
+public class Assignment0309Q4 {
 	public static void main(String[] args) {
 		Scanner first_sc = new Scanner(System.in);
 		System.out.println("첫번째 정수를 입력하세요 : ");
@@ -25,11 +25,12 @@ public class Assignment0308Q4 {
 		
 		System.out.println("첫번째 정수 : " + first_num);
 		System.out.println("두번째 정수 : " + second_num);
-		
+		if (second_num != 0) {
 		boolean check = (first_num % second_num == 0);
-		
 		System.out.println(first_num  + "가 " + second_num + "의 배수인지 판단 결과 :" + check );
-		
+		} else {
+			System.out.println("division by zero");
+		}
 		
 	}
 

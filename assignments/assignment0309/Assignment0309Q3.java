@@ -1,4 +1,4 @@
-package lectures.assignment0308;
+package assignment0309;
 
 import java.util.Scanner;
 //3.
@@ -24,7 +24,7 @@ import java.util.Scanner;
 * 960원이 부족합니다
 */
 
-public class Assignment0308Q3 {
+public class Assignment0309Q3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

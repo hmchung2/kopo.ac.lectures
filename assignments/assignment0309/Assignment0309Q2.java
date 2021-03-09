@@ -1,4 +1,4 @@
-package lectures.assignment0308;
+package assignment0309;
 
 //2. 반지름을 입력받아 원둘레와 원넓이를 출력하는 코드를 작성 ( 단 , 원주율을 상수변수를 사용해서 작성)
 /*
@@ -7,7 +7,7 @@ package lectures.assignment0308;
 */
 import java.util.Scanner;
 
-public class Assignment0308Q2 {
+public class Assignment0309Q2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

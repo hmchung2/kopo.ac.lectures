@@ -18,6 +18,12 @@ public class LottoMain {
 		float test = 5.7f;
 		int x = '\n';
 		System.out.println(x);
+		
+		
+		System.out.println("today's lottory numbers --->");
+		sub_class new_object = new sub_class();
+		new_object.todayLotto();
+		
 
 	}
 

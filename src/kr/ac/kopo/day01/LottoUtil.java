@@ -10,6 +10,8 @@ import java.util.Random;
 public class LottoUtil {
 	// 멤버변수
 	int lottoNum;
+	static int test = 5;
+
 
 	// 메소드
 	/**
@@ -18,6 +20,7 @@ public class LottoUtil {
 	public static void todayLotto() {
 		Random r = new Random();
 		System.out.println("오늘의 로또 확률 : " +  r.nextInt(101) + "%입니다");
+		System.out.println(test); // static method can run static data
 	}
 	
 	/**
@@ -31,3 +34,4 @@ public class LottoUtil {
 	}
 	
 }
+

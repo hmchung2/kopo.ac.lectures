@@ -72,6 +72,6 @@ public class Assignment0310 {
 			}
 			System.out.println();
 		}
+		
 	}
-
 }

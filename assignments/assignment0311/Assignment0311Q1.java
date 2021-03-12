@@ -1,5 +1,5 @@
 package assignment0311;
-
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Assignment0311Q1 {
@@ -10,35 +10,35 @@ public class Assignment0311Q1 {
 		System.out.println("길이를 입력 하세요");
 		int len = sc.nextInt();
 
-		
 		int[] numArr = new int[len];
 		for (int i = 0; i < numArr.length; i++) {
 			System.out.println("번호를 입력하세요");
-			int currentNum = sc.nextInt();			
+			int currentNum = sc.nextInt();
+			while (currentNum <= 0) {
+				System.out.println("0 보다 큰 수를 입력하세요");
+				currentNum = sc.nextInt();
+			}
 			numArr[i] = currentNum;
 		}
-		
-		
 		int[] finalArr = new int[len];
-		for (int i = 0; i < len; i++) {
-			int currentMax = 0;
-			for (int j = 0; j < len; j++) {
-				if (i != 0) {
-					if (numArr[j] >= currentMax && finalArr[i - 1] >= numArr[j]) {
-						currentMax = numArr[j];
-					}
-				} else {
-					if (numArr[j] >= currentMax) {
-					currentMax = numArr[j];
-					}
+		int num;
+		int index = 0;
+		for(int i = 0; i < len ; i++ ) {
+			num = 0 ;
+			for(int j = 0 ; j < len ; j ++) {
+				if(numArr[j]  > num ) {
+					num = numArr[j];
+					index = j;
 				}
-			}
-			finalArr[i] = currentMax;
-		}
 
-		for (int i = 0; i < len; i++) {
-			System.out.println(finalArr[i]);
+			}
+			finalArr[i] = num;
+			numArr[index] = 0;
 		}
+		for(int i = 0 ; i < finalArr.length ; i ++) {
+			System.out.println( i + "번째로 큰 수 : " + finalArr[i]  );
+		}
+		System.out.println(Arrays.toString(finalArr) );
 
 	}
 }

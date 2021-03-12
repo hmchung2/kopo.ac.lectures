@@ -18,7 +18,7 @@ public class Assignment0311Q4 {
 		System.out.println("정수를 입력 하세요");
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
-		while(num < 0 ) {
+		while(num <= 0 ) {
 			System.out.println("0보다 큰수를 입력 하세요");
 			num = sc.nextInt();
 		}

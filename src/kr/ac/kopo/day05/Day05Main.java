@@ -16,9 +16,9 @@ public class Day05Main {
 		System.out.println("b : " + Arrays.toString(b) );
 		
 		b = new int[a.length];
-		
-
 		System.out.println("b : " + Arrays.toString(b) );
+		
+		
 
 	}
 }

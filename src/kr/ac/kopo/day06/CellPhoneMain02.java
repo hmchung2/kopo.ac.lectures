@@ -24,13 +24,13 @@ public class CellPhoneMain02 {
 	
 		cp1.name = "Daniel";
 		
-		System.out.println("================================");
+		System.out.println("================================1");
 
 		for(CellPhone i : cpArrDeepCopy) {
 			System.out.println(i.name);
 		}
 
-		System.out.println("================================");
+		System.out.println("================================2");
 
 		for(CellPhone i : cpArrShalCopy) {
 			System.out.println(i.name);
@@ -41,7 +41,7 @@ public class CellPhoneMain02 {
         // cp2,
         // cp3};
 				
-		System.out.println("================================");
+		System.out.println("================================3");
 
 		CellPhone[] newArr = new CellPhone[] {new CellPhone(),
 				                              new CellPhone(),
@@ -52,8 +52,8 @@ public class CellPhoneMain02 {
 			System.out.println(newArr[i].name);
 		}
 		
-		System.out.println("================================");
-		
+		System.out.println("================================4");
+		// this one is shallow copy of class but deep copy of array which is not efficient
 		CellPhone[] newArr2 = new CellPhone[] {cp1,cp2,cp3};
 		cp1.name = "Smith";
 		for(int i  =0 ; i < newArr2.length ; i++) {

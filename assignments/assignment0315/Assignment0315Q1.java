@@ -37,7 +37,7 @@ public class Assignment0315Q1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int len = 2;
+		int len = 4;
 		IceCream[] iceArrCreams = new IceCream[len];
 
 		Scanner sc = new Scanner(System.in);

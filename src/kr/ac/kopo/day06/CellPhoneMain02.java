@@ -46,6 +46,8 @@ public class CellPhoneMain02 {
 		CellPhone[] newArr = new CellPhone[] {new CellPhone(),
 				                              new CellPhone(),
 				                              new CellPhone()};
+		
+		
 		for(int i = 0 ; i < newArr.length ; i ++) {
 			System.out.println(newArr[i].name);
 		}
@@ -57,6 +59,8 @@ public class CellPhoneMain02 {
 		for(int i  =0 ; i < newArr2.length ; i++) {
 			System.out.println(newArr2[i].name);
 		}
+		
+		
 		
 		
 		

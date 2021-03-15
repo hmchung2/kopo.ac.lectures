@@ -2,7 +2,7 @@ package kr.ac.kopo.day06;
 
 import java.util.Arrays;
 
-public class Objects01 {
+public class OperPlusReveiw {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

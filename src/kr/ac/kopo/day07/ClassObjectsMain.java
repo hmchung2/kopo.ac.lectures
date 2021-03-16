@@ -1,5 +1,6 @@
 package kr.ac.kopo.day07;
 
+import java.util.Random;
 import java.util.Scanner;
 // Scanner sc = new Scanner(System.in);
 // int price = sc2.nextInt();
@@ -10,6 +11,10 @@ import java.util.Scanner;
 
 //System.arraycopy(a, 0, b, 0, a.length);
 
+
+// Random r = new Random();
+// int a = r.nextInt(100);
+// System.out.println(a);
 
 
 public class ClassObjectsMain {

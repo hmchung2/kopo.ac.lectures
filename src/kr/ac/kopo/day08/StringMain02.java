@@ -13,7 +13,6 @@ public class StringMain02 {
 		
 		System.out.println(chars);
 		
-		
 		for(int i = 0; i < str.length() ; i++) {
 			chars[i]  = str.charAt(i);
 		}

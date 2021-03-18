@@ -1,4 +1,4 @@
-package kr.ac.kopo.day10;
+package kr.ac.kopo.day09;
 
 public class StringMain03 {
 	

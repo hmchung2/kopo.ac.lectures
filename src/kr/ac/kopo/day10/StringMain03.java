@@ -4,7 +4,7 @@ public class StringMain03 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		// git intellij test
 		boolean check;
 		String str = new String("hello");
 		String str2 = new String("hello");

@@ -16,13 +16,12 @@ public class Assignment0318 {
         System.out.println(" 'A'  lower case check :  " + stringUtil.isLowerChar('A'));
 
         //question 3
-        System.out.println("maximum number between 5 and 6 : " + stringUtil.max(+5, 6));
+        System.out.println("maximum number between 5 and 6 : " + stringUtil.max(5, 6));
 
         //question 4
-        System.out.println("minimum number between 5 and 6 : " + stringUtil.min(+5, 6));
+        System.out.println("minimum number between 5 and 6 : " + stringUtil.min(5, 6));
 
         //question 5
-
         System.out.println("reverse of hello world --> " + stringUtil.reverseString("Hello World"));
 
         //question 6

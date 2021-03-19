@@ -5,9 +5,7 @@ public class Employee {
     String name;
     int salary;
     String grade;
-
-    public Employee() {
-    }
+    
 
     public Employee(int no, String name, int salary, String grade) {
         this.no = no;

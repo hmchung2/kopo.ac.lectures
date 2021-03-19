@@ -4,9 +4,7 @@ public class Manager03 extends Employee {
 
     Employee[] emplist; //관리 사원 목록 저장
 
-    public Manager03(){
-
-    }
+   
 
     public Manager03(int no, String name, int salary, String grade, Employee[] emplist) {
         super(no, name , salary , grade);

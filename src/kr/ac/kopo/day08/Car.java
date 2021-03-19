@@ -12,7 +12,7 @@ package kr.ac.kopo.day08;
 public class Car {
 	int num = 5;
 	String name ; 
-	Car(int x){
+	public Car(int x){
 		num = x;
 	}
 	Car(){
@@ -24,7 +24,7 @@ public class Car {
 	}
 	
 	
-	void print() {
+	public void print() {
 		System.out.println(this.num);
 	}
 	

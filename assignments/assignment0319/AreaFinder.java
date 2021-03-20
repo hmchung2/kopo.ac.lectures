@@ -27,7 +27,6 @@ public class AreaFinder {
         }
         this.shape = Integer.parseInt(String.valueOf(sbuffer.charAt(0) ));
 
-        System.out.println(this.shape);
     }
 
     public AreaFinder(int shape){

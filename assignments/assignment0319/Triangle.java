@@ -16,7 +16,7 @@ public class Triangle extends Polygon {
 
     @Override
     public void printInfo(){
-        System.out.println("밑변 길이 " + feature1 + " 높이 " + feature2);
+        System.out.print("밑변 길이 " + feature1 + " 높이 " + feature2 + "  ");
         super.printInfo();
     }
 }

@@ -16,7 +16,7 @@ public class Rectangle extends Polygon {
 
     @Override
     public void printInfo(){
-        System.out.println("가로 길이 " + feature1 + " 세로 길이 " + feature2);
+        System.out.print("가로 길이 " + feature1 + " 세로 길이 " + feature2 +"  ");
         super.printInfo();
     }
 

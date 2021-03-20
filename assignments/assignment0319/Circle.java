@@ -15,7 +15,7 @@ public class Circle extends Polygon {
 
     @Override
     public void printInfo(){
-        System.out.println("반지름 길이 " + feature1);
+        System.out.print("반지름 길이 " + feature1 + "  ");
         super.printInfo();
     }
 

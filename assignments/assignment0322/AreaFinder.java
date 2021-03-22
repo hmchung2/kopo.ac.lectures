@@ -11,7 +11,7 @@ public class AreaFinder {
     private int feature2;
     private int min = 1;
     private int max = 20;
-    Shape polygon;
+    private Shape polygon;
 
 
 
@@ -43,5 +43,9 @@ public class AreaFinder {
         } else {
             polygon = new Circle(this.feature1);
         }
+
+    }
+    public Shape getPolygon(){
+        return this.polygon;
     }
 }

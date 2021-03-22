@@ -1,4 +1,4 @@
-package assignment0319;
+package assignment0322;
 import java.util.Scanner;
 import java.util.Random;
 public class AreaFinder {
@@ -11,7 +11,7 @@ public class AreaFinder {
     private int feature2;
     private int min = 1;
     private int max = 20;
-    private Polygon polygon = new Polygon();
+    Shape polygon;
 
 
 
@@ -26,10 +26,6 @@ public class AreaFinder {
             sbuffer.append(sc.next());
         }
         this.shape = Integer.parseInt(String.valueOf(sbuffer.charAt(0) ));
-    }
-
-    public AreaFinder(int shape){
-        this.shape = shape;
     }
 
     public void getRandomFeatures(){
@@ -47,33 +43,5 @@ public class AreaFinder {
         } else {
             polygon = new Circle(this.feature1);
         }
-    }
-    public void calculate(){
-        polygon.calculateResult();
-    }
-    public void printArea(){
-        polygon.printInfo();
-    }
-
-    public void setShape(int x){
-        System.out.println("1. 직사각형, 2. 정사각형, 3.삼각형, 4.원)");
-        this.shape = x;
-    }
-    public int getShape(){
-        return this.shape;
-    }
-
-    public void setFeatures(int x, int y){
-        this.feature1 = x;
-        this.feature2 = x;
-    }
-    public void setFeatures(int x){
-        this.feature1 = x;
-    }
-
-    public int[] getFeatures(){
-        System.out.println("feature 1 : " + this.feature1);
-        System.out.println("feature 2 : " + this.feature2);
-        return new int[] {feature1 , feature2};
     }
 }

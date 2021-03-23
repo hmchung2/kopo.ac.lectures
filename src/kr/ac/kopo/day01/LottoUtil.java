@@ -1,7 +1,7 @@
 package kr.ac.kopo.day01;
 import java.util.Random;
 
-/**
+/*
  * util class
  * @author Daniel Chung
  */

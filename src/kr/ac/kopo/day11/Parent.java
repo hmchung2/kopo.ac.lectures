@@ -9,4 +9,8 @@ public class Parent {
 	void info() {		
 		System.out.println("i am parent");
 	}
+	
+	void parentinfo() {
+		System.out.println("just parent info");
+	}
 }

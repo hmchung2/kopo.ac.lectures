@@ -41,8 +41,6 @@ public class SwitchMain {
 			case "spring":
 				System.out.println("spring confirmed in switch");
 			}
-			
-		
 	}
 
 }

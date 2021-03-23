@@ -16,8 +16,11 @@ public class ChildMain {
 		// TODO Auto-generated method stub
 		System.out.println("p2");
 		Parent p2 = new Child02();
-		// Child02 c = (Child02)p2;
-		print(p2);
+		Child02 c = (Child02)p2;
+		
+		c.parentinfo();
+		c.info();
+		
 
 	}
 }

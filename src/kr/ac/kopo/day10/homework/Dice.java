@@ -24,14 +24,17 @@ public class Dice implements Game{
 	}
 	
 	public int askNumber() {
+		sb.setLength(0);
 		System.out.println("1 에서 6 숫자중 선택");
         sb.append(sc.next());
-        while( (int)sb.charAt(0)  < (int)'1' || (int)sb.charAt(0) > (int)'3'){
+        int cnum = Integer.parseInt(sb.charAt(0) + "");
+        while( cnum  < 1 || cnum > 6){
         	sb.setLength(0);
         	System.out.println("다시 입력하세요");
         	System.out.println("1 에서 6 숫자중 선택");
     		sb.append(sc.next());
+    		cnum = Integer.parseInt(sb.charAt(0) + "");
         }
-		return (int)sb.charAt(0);	
+		return cnum;
 	}
 }

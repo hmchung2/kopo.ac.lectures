@@ -13,13 +13,15 @@ public class Main {
 		System.out.println("게임을 선택하세요");
 		System.out.print("A.가위바위보 \nB.주사위 값 맞추기 \nC.종료 \n");
         sb.append(sc.next());
-        while( (int)sb.charAt(0)  < (int)'A' || (int)sb.charAt(0) > (int)'C'){
+        char which =   Character.toUpperCase(sb.charAt(0));
+        while( (int)which  < (int)'A' || (int)which > (int)'C'){
         	sb.setLength(0);
         	System.out.println("다시 입력하세요");
-    		System.out.print("A.가위바위보 \n B.주사위 값 맞추기 \n C.종료 \n");
+    		System.out.print("A.가위바위보 \nB.주사위 값 맞추기 \nC.종료 \n");
     		sb.append(sc.next());
+    		which = Character.toUpperCase(sb.charAt(0));
         }
-		return Character.toUpperCase(sb.charAt(0));
+		return which;
 	}
 	
 	public static void resultAdding(int x){

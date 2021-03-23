@@ -20,11 +20,7 @@ public class ScissorsRockPaper implements Game {
 	@Override
 	public int startGame(int you) {
 
-		System.out.println("passed here");
 		int me = r.nextInt(3) + 1;
-		System.out.println(me);
-		System.out.println("you");
-		System.out.println(you);
 		printWhich(you, "당신은");
 		printWhich(me, "컴퓨터는");
 

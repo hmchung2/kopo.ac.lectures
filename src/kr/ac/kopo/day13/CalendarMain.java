@@ -8,8 +8,6 @@ public class CalendarMain {
 	
 	public static void main(String[] args) {
 		
-		
-		
 		Calendar cdate = Calendar.getInstance();
 		
 		GregorianCalendar grec = (GregorianCalendar) cdate;
@@ -18,10 +16,6 @@ public class CalendarMain {
 		
 		//GregorianCalendar newgrec = Calendar.getInstance();
 	
-		
-		
-		
-		
 		int year = cdate.get(Calendar.MONTH) + 1;  // 0 ~ 11
 		
 		Date okay = cdate.getTime();
@@ -34,13 +28,9 @@ public class CalendarMain {
 		
 		System.out.println("오늘은 "+ dayArr[day] + "입니다.");
 		
-		
 		cdate.set(2021, 4, 5);
 		int breakDay = cdate.get(Calendar.DAY_OF_WEEK);
 		System.out.println("어린이날은 "+ dayArr[breakDay] + "입니다.");
-		
-		
-		
 		
 		//5월의 마지막 날
 		int lastday = cdate.getActualMaximum(Calendar.DAY_OF_MONTH);
@@ -60,16 +50,6 @@ public class CalendarMain {
 		String sdf = sd.format(new Date());
 		
 		System.out.println("sdf" + sdf);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 }

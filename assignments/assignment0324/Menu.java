@@ -30,7 +30,7 @@ public class Menu {
 		if(status == 1) {
 			for(int i = 1; i <= 12 ; i ++) {
 				System.out.println();
-				System.out.println("<< 2020년 "+i+ "월 >>");
+				System.out.println("<<" +year+" 년 "  +i+ "월 >>");
 				MonthPrint m = new MonthPrint(year, i);
 				m.setCalendar();
 				m.printMonth();

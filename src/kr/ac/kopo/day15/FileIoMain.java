@@ -59,7 +59,7 @@ public class FileIoMain {
 	
 	public static void write2() {
 		Dog d = new Dog("doy" , 4 , "pud");
-		Dog d2 = new Dog("wow", 5 , "second");
+		        Dog d2 = new Dog("wow", 5 , "second");
 		
 		
 		FileOutputStream fos = null;

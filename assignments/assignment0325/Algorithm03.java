@@ -35,7 +35,5 @@ public class Algorithm03 extends AbstractGames {
 			System.out.print(" ");
 		}
 		System.out.println("]");
-	}
-	
-	
+	}	
 }

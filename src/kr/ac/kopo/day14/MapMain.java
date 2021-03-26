@@ -55,17 +55,21 @@ public class MapMain {
 
 		System.out.println("전체 회원정보 출력");
 		Set<Map.Entry<String , String>>entryset =  map.entrySet();
-		
-		
+		System.out.println();
+
 		for(Entry<String, String> e : entryset   ) {
 			System.out.println(e.getKey());
 			System.out.println(e.getValue());
 		}
 		
-		System.out.println(entryset);
+		
+		System.out.println("map get printing");
+		System.out.println(  Integer.parseInt(map.get("aaa") ) * -1  );
+		
+		//System.out.println(entryset);
 		
 		
-		System.out.println("keyset");
+		System.out.println("-------- using keyset-------");
 		
 		Set<String> keys =   map.keySet();
 		
@@ -74,6 +78,7 @@ public class MapMain {
 		}
 		
 		System.out.println(keys);
+		
 		
 		
 	}

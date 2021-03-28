@@ -2,8 +2,6 @@ package kr.ac.kopo.day14;
 
 import java.util.ArrayList;
 
-import com.sun.tools.javac.util.List;
-
 class Cat{
 	@Override
 	public String toString() {

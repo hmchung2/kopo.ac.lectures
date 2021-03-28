@@ -6,9 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.CharBuffer;
 
-import com.sun.tools.javac.jvm.Target;
 
-import jdk.jfr.events.FileWriteEvent;
 
 public class ExceptionMain03 {
 

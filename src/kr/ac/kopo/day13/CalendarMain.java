@@ -10,11 +10,10 @@ public class CalendarMain {
 		
 		Calendar cdate = Calendar.getInstance();
 		
-		GregorianCalendar grec = (GregorianCalendar) cdate;
+//		GregorianCalendar grec = (GregorianCalendar) cdate;
 		
-		System.out.println(grec.get(Calendar.DATE));
+		System.out.println(cdate.get(Calendar.DATE));
 		
-		//GregorianCalendar newgrec = Calendar.getInstance();
 	
 		int year = cdate.get(Calendar.MONTH) + 1;  // 0 ~ 11
 		
@@ -42,14 +41,14 @@ public class CalendarMain {
 		System.out.println(lastday);
 		
 		
-		SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH : MM ");
+		SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH : mm ");
 		System.out.println(new String(sd.format(new Date()) ));
 		
 		Date d = cdate.getTime();
-		
+		System.out.println("D " + d);
+
 		String sdf = sd.format(new Date());
-		
-		System.out.println("sdf" + sdf);
+		System.out.println("sdf " + sdf);
 		
 	}
 }

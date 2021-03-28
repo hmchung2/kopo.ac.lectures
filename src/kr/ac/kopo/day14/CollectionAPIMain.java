@@ -1,6 +1,7 @@
 package kr.ac.kopo.day14;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class Cat{
 	@Override
@@ -15,9 +16,9 @@ public class CollectionAPIMain {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayList<String> list = new ArrayList<String>();
+		List<String> list = new ArrayList<String>();
 		
-		Object[] strArr = new Object[3];
+		Object[] strArr = new Object[2];
 		strArr[0] = new String("1111");
 		strArr[1] = new Cat();
 		

@@ -8,10 +8,13 @@ public class StringMain02 {
 		String str = "Hello World";
 		char[] chars = new char[str.length()];
 		
-		
+		System.out.println("get chars start");
 		str.getChars(0, str.length(), chars, 0);
-		
+		System.out.println("get chars end");
+
 		System.out.println(chars);
+		String testing = new String(chars);
+		System.out.println("testing" + testing);
 		
 		for(int i = 0; i < str.length() ; i++) {
 			chars[i]  = str.charAt(i);

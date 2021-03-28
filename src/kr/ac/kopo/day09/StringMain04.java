@@ -30,12 +30,14 @@ public class StringMain04 {
 			System.out.println("검색된 위치 : " + index);
 			index = str.indexOf(ch , index+1);
 		}
+
+		System.out.println("----------------");
 		
 		index = -1;
 		while((index =str.indexOf(ch, index+1)) != -1) {
 			System.out.println("검색된 위치 : " + index);
 		}
-		
+		System.out.println("----------------");
 		index = str.length();
 		while((index =str.lastIndexOf(ch, index-1)) != -1) {
 			System.out.println("검색된 위치 : " + index);

@@ -97,25 +97,23 @@ public class GenericMain {
 		 
 		 System.out.println(list2); 
 
-		 for(int i = 0 ; i < list.size() ; i ++) {
-			 System.out.println(list2.get(i).toString());
-		 }
-		 List<Integer> intArrays=new ArrayList<Integer>();		 
-		 intArrays.add(5);
-		 intArrays.add(4);
-		 intArrays.add(3);
-		 intArrays.add(2);
-		 intArrays.add(1);
-		 System.out.println(intArrays);
+	
+		 List<Integer> intList=new ArrayList<Integer>();		 
+		 intList.add(5);
+		 intList.add(4);
+		 intList.add(3);
+		 intList.add(2);
+		 intList.add(1);
+		 System.out.println(intList);
 		 
-		 for(int i = 0 ; i < intArrays.size() ; i ++) {
-			 System.out.println(intArrays.get(i) + 1);
+		 for(int i = 0 ; i < intList.size() ; i ++) {
+			 System.out.println(intList.get(i) + 1);
 		 }
 		 
 		 
 		 
-		 intArrays.remove((Integer) 2  );
-		 System.out.println(intArrays);
+		 intList.remove((Integer) 2  );
+		 System.out.println(intList);
 		 
 		 
 		 
@@ -123,12 +121,10 @@ public class GenericMain {
 		 //List<String> listing = new ArrayList<String>(); //1.5버전
 		 List<String> listing = new ArrayList<>();  //1.7버전 이후
 		 
-		 listing.add("one");
-		 // 에러 --> listing.add(15);
-		 
+	 
 		 System.out.println("1.5버전의 for 문 사용");
 		 
-		 for(Integer i : intArrays) {
+		 for(Integer i : intList) {
 			 System.out.println(i);
 		 }
 		 		
@@ -136,7 +132,7 @@ public class GenericMain {
 	 
 		System.out.println("<toArray() 메소드 이용 출력");
 		 
-		Object[] myintarray = intArrays.toArray();
+		Object[] myintarray = intList.toArray();
 		
 		//Integer[] myintarray = (Integer[])(intArrays.toArray()) ; 이것도 가능
 		
@@ -150,7 +146,7 @@ public class GenericMain {
 		 * -next() : 데이터 추출  
 		 */
 		System.out.println("iterator testing");
-		Iterator<Integer> ite = intArrays.iterator();  //리스트에 맨처음(처음 전) 가리키기 시작.
+		Iterator<Integer> ite = intList.iterator();  //리스트에 맨처음(처음 전) 가리키기 시작.
 		                                               // 어레이에서 사용 안됨.
 		while(ite.hasNext()) {
 			System.out.println(ite.next());
@@ -160,22 +156,15 @@ public class GenericMain {
 			
 		
 		Integer searchint = 10;
-		if(intArrays.contains((Integer) searchint)) {
+		if(intList.contains((Integer) searchint)) {
 			System.out.println("it exists");
 		} else {
 			System.out.println("it does not exist");
 		}
 		
-		Integer removed = intArrays.remove(0 );
+		Integer removed = intList.remove(0 );
 		System.out.println(removed);
-		System.out.println(intArrays);
-		
-		
-		List<int[]> intArrays2=new ArrayList<int[]>();
-		
-		
-		
-		
+		System.out.println(intList);		
 		
 
 		

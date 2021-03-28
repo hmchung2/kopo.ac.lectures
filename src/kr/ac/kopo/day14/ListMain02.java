@@ -81,6 +81,17 @@ public class ListMain02 {
 		System.out.println(Arrays.toString(arr2));
 		
 		
+		Set<Integer> set3 = new HashSet<>();
+		set3.add(5);
+		set3.add(3);
+		set3.add(4);
+		set3.add(1);
+		set3.add(2);
+		Object[] arr3 = set3.toArray();
+		System.out.println("Hashset");
+		System.out.println(Arrays.toString(arr3));
+		
+		
 		System.out.println("----------Iterator2----------");
 		Iterator<Integer> ite2 = set2.iterator();
 		while(ite2.hasNext()) {

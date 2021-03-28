@@ -21,7 +21,8 @@ public class ExceptionMain05 {
 		String id2 = sb.toString();
 		sb.setLength(0);
 		if (id2.length() > 8) {
-			throw new checkIDException("ID는 최대 8글자만 가능합니다!!!!!!!!!!!!!.");
+			checkIDException errorClass = new checkIDException("ID는 최대 8글자만 가능합니다!!!!!!!!!!!!!.");
+			throw errorClass;
 		}
 		System.out.println("id 등록 완료");
 	}

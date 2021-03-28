@@ -89,9 +89,11 @@ public class FileIoMain {
 			fis = new FileInputStream("iodata/dogInfo.txt");
 			dis = new DataInputStream(fis);
 			
+			System.out.println("reading utf");
 			String data = dis.readUTF();
 			System.out.println(data);
-			
+
+			System.out.println("now split");
 			String[] strArr = data.split(":");
 			System.out.println(Arrays.toString(strArr));
 			System.out.println(strArr.length);
@@ -103,7 +105,7 @@ public class FileIoMain {
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		write();
 		read();
 		write2();

@@ -14,6 +14,8 @@ public class JdbcTest {
 		String url = "jdbc:oracle:thin:@" + serverName + ":" + portNumber + ":" + sid;
 		String username = "scott";
 		String password = "tiger89";
+		
+		System.out.println(url);
 		Connection conn = DriverManager.getConnection(url, username, password);
 	
 

@@ -46,6 +46,8 @@ public class ListMain02 {
 		// 입력 순서가 아니다.
 		
 		System.out.println("----------for loop----------");
+
+		System.out.println(String.join(", ", set));
 		for(String str : set) {
 			System.out.println(str);
 		}

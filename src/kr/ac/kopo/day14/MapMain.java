@@ -18,7 +18,7 @@ public class MapMain {
 		map.put("ccc", "3333");
 		map.put("ddd", "4444");
 		map.put("eee", "5555");
-		
+		map.put("ddd", "4447");
 		Scanner sc= new Scanner(System.in);
 		System.out.println("패스워드 변경서비스 입니다.");
 		System.out.println("ID 를 입력하세요");

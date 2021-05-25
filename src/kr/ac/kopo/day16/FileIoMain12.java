@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import kr.ac.kopo.util.FileClose;
-import oracle.net.aso.l;
+
 
 public class FileIoMain12 {
 

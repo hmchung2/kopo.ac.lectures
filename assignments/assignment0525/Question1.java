@@ -17,21 +17,20 @@ public class Question1 {
 		sc.nextLine();
 
 		StringBuilder sql = new StringBuilder();
-		sql.append("SELECT JOB_TITLE, AVG(SALARY) AS SAL_AVG  FROM EMPLOYEES E, JOBS J");
-		sql.append(" WHERE E.JOB_ID = J.JOB_ID AND SALARY >= ? ");
-		sql.append(" GROUP BY JOB_TITLE ORDER BY AVG_SAL DESC" );
-
+		sql.append("select JOB_TITLE , avg(salary) as SAL_AVG from (");
+		sql.append(" select E.SALARY, J.JOB_TITLE FROM EMPLOYEES E, JOBS J ");
+		sql.append(" WHERE E.JOB_ID = J.JOB_ID AND SALARY >= ?) group by JOB_TITLE");
 
 		// 자동 close 사용
 		try (Connection conn = new ConnectionFactory().getConnection();
 				PreparedStatement pstmt = conn.prepareStatement(sql.toString());) {
 			pstmt.setInt(1, sal);
 			ResultSet rs = pstmt.executeQuery();
-			int cnt = 0 ;
+			int cnt = 0;
 			while (rs.next()) {
 				String jobTitle = rs.getString("JOB_TITLE");
 				String avgSal = rs.getString("SAL_AVG");
-				System.out.println("[ " + jobTitle + " ] " + avgSal );
+				System.out.println("[ " + jobTitle + " ] " + avgSal);
 				cnt++;
 			}
 			System.out.println("총 [" + cnt + "] 명이 검색되었습니다.");
